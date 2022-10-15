@@ -1,0 +1,19 @@
+record(ai, voltage)
+{
+	field(EGU, "V")
+	field(FLNK, "power.PROC")
+}
+record(ai, current)
+{
+	field(EGU, "A")
+	field(FLNK, "power.PROC")
+}
+record(calc, power)
+{
+	field(INPA, "voltage PP")
+	field(INPB, "current PP")
+	field(CALC, "A * B")
+	field(EGU, "W")
+}
+
+
